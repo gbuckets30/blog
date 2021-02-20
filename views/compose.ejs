@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs'); -%>
+
+<h1>Compose</h1>
+
+<form action="/compose" method="post">
+
+  <div class="mb-3">
+    <label for="title" class="form-label">Blog Title</label>
+    <input type="text" class="form-control" id="title" autocomplete="off" autofocus name="title">
+    <div class="form-text">Enter the title of this blog</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="content" class="form-label">Blog Content</label>
+    <textarea class="form-control blog-input-content" id="content" autocomplete="off" name="content"></textarea>
+    <div class="form-text">Enter the contents of this blog</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Publish</button>
+</form>
+
+<%- include('./partials/footer.ejs'); -%>
